@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to the Pet Adoption System</h1>
+<p>Find your perfect pet companion today!</p>
+
+<div class="home-buttons">
+    {% if current_user.is_authenticated %}
+        <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('register') }}">Register</a>
+    {% endif %}
+</div>
+
+<!-- Additional content can go here -->
+{% endblock %} 

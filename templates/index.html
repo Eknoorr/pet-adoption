@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to the Pet Adoption System</h1>
+<p>Find your perfect pet companion today!</p>
+
+
+{% if current_user.is_authenticated %}
+    <p>Hello, {{ current_user.username }}!</p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+{% else %}
+    <p>Please <a href="{{ url_for('login') }}">login</a> or <a href="{{ url_for('register') }}">register</a> to start adopting pets.</p>
+{% endif %}
+
+<div class="pet-grid">
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="Pet Image 1">
+        <div class="pet-info">
+            <h3>Pet Name 1</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="Pet Image 2">
+        <div class="pet-info">
+            <h3>Pet Name 2</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="Pet Image 3">
+        <div class="pet-info">
+            <h3>Pet Name 3</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image4.jpg') }}" alt="Pet Image 4">
+        <div class="pet-info">
+            <h3>Pet Name 4</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image5.jpg') }}" alt="Pet Image 5">
+        <div class="pet-info">
+            <h3>Pet Name 5</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image6.jpg') }}" alt="Pet Image 6">
+        <div class="pet-info">
+            <h3>Pet Name 6</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image7.jpg') }}" alt="Pet Image 7">
+        <div class="pet-info">
+            <h3>Pet Name 7</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image8.jpg') }}" alt="Pet Image 8">
+        <div class="pet-info">
+            <h3>Pet Name 8</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image9.jpg') }}" alt="Pet Image 9">
+        <div class="pet-info">
+            <h3>Pet Name 9</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image10.jpg') }}" alt="Pet Image 10">
+        <div class="pet-info">
+            <h3>Pet Name 10</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image11.jpg') }}" alt="Pet Image 11">
+        <div class="pet-info">
+            <h3>Pet Name 11</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image12.jpg') }}" alt="Pet Image 12">
+        <div class="pet-info">
+            <h3>Pet Name 12</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image13.jpg') }}" alt="Pet Image 13">
+        <div class="pet-info">
+            <h3>Pet Name 13</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image14.jpg') }}" alt="Pet Image 14">
+        <div class="pet-info">
+            <h3>Pet Name 14</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+    <div class="pet-card">
+        <img src="{{ url_for('static', filename='images/image15.jpg') }}" alt="Pet Image 15">
+        <div class="pet-info">
+            <h3>Pet Name 15</h3>
+            <p>Breed: Unknown</p>
+            <p>Age: Unknown</p>
+            <button>Adopt Me</button>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %} 
